@@ -18,7 +18,7 @@ export default function DarkModeToggle() {
       timeout={0}
     >
       <svg
-        width="170"
+        width="58.29"
         height="70"
         viewBox="0 0 170 70"
         fill="none"

@@ -1,0 +1,70 @@
+.footer {
+    margin: 40px auto 0 0;
+    height: 200px;
+    align-items: center;
+    .goal {
+        display: flex;
+        .carrera {
+            width: 100%;
+            margin: auto;
+            height: 100px;
+            display: inline-block;
+            .men {
+                width: 80%;
+                place-content: end;
+                align-items: start;
+                background: url("https://img.icons8.com/ios-filled/100/000000/exercise.png") no-repeat;
+                height: 100px;
+            }
+        }
+        .meta {
+            transition: filter 0.75s ease-in-out;
+        }
+    }
+    .contactoContainer {
+        margin: auto;
+        z-index: 999;
+        height: 350px;
+        background: linear-gradient(to bottom, #c30303, red); /* 
+        text-align: center; */
+        div {
+            h2 {
+                text-align: center;
+            }
+            h4 {
+                font-weight: 600;
+                color: #fefefe;
+                text-shadow: 2px 2px 5px rgb(0, 0, 0);
+            }
+            .itemIg {
+                width: 90%;
+                overflow: visible;
+                stroke: #fefefe;
+                stroke-width: 0.5;
+                stroke-linejoin: round;
+                stroke-linecap: round;
+                transform: translateY(5px);
+            }
+            .containerIg {
+                width: 60px;
+                height: 60px;
+                display: flex;
+                place-content: center;
+                overflow: hidden;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 12px;
+                margin-bottom: 40px;
+            }
+            h5 {
+                font-weight: 600;
+                color: #fefefe;
+                text-shadow: 2px 2px 5px rgb(0, 0, 0);
+                a{
+                    text-decoration: none;
+                    color: #fefefe;
+                    text-shadow: 2px 2px 5px black;
+                }
+            }
+        }
+    }
+}

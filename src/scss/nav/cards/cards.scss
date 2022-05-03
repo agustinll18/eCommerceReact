@@ -1,0 +1,36 @@
+.card {
+  background: radial-gradient(rgb(255, 250, 250) 90%, rgba(0, 0, 0, 0.5));
+  transition: background 0.75s ease-in-out;
+  .card-title {
+    font-family: $fontHeaders;
+    font-weight: 600;
+  }
+  .card-text {
+    font-family: $fontCommon;
+  }
+  .text-muted {
+    font-family: $fontCommon;
+  }
+  .card-footer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to left, #e52d27 0%, #b31217 51%, #e52d27 100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    text-decoration: none;
+    font-weight: 600;
+    &:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+.cards {
+  margin: 40px auto;
+  text-align: center;
+}

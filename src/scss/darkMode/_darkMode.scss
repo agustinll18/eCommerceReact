@@ -1,25 +1,43 @@
-@import '../variables';
+@import "../variables";
 
 body {
-  transition: all .75s ease-in-out;
-  padding: 0px 15px 0px 15px;
+  transition: all 0.75s ease-in-out;
+  background: rgb(254, 254, 254) !important;
+  vertical-align: middle;
+
+  .card {
+    transition: background 0.75s ease-in-out;
+  }
 }
 
 body.dark {
-  background-color: rgb(43, 43, 43);
-  color: rgb(212, 212, 212);
-  padding: 0px 15px 0px 15px;
+  background: #212121 !important;
+  color: rgb(232, 232, 232) !important;
+  .card {
+    background: radial-gradient(#212121 80%, rgb(212, 3, 3, 0.5)) !important;
+    border: 1px solid #fff;
+    color: rgb(232, 232, 232) !important;
+    transition: background 0.75s ease-in-out;
+  }
+  .men {
+    transition: filter 0.75s ease-in-out;
+    filter: invert(1);
+  }
+  .meta{
+    filter: invert(0.84) brightness(.8);
+  }
 }
-#navbar{
+#navbar {
   z-index: 2;
   background: #fff;
   border-bottom: 1.5px solid #000;
+  transition: all 0.75s ease-in-out;
 }
 .switch {
   cursor: pointer;
-  width: 180px;
+  width: 58.29; /* 
+  margin-right: 40%; */
   height: 24px;
-  margin: 0px;
   z-index: 2;
 }
 
