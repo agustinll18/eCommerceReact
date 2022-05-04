@@ -560,7 +560,13 @@ body.dark .meta {
   height: 100px;
 }
 .footer .goal .meta {
+  width: 100px !important;
+  height: 100px !important;
+  overflow: hidden;
+}
+.footer .goal .meta .phone {
   transition: filter 0.75s ease-in-out;
+  transform: scale(20%) rotatez(90deg) translate(-120%, 100%);
 }
 .footer .contactoContainer {
   margin: auto;
@@ -608,6 +614,28 @@ body.dark .meta {
   text-shadow: 2px 2px 5px black;
 }
 
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .container {
+    padding: 0px !important;
+  }
+  .container h1 {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    transform: translateY(4px);
+  }
+
+  .carrera {
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    display: inline-block;
+  }
+  .carrera .men {
+    transform: scale(0.7) !important;
+    margin: 0px !important;
+    width: 100% !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -718,8 +746,30 @@ p {
 }
 
 .links {
-  font-weight: 800 !important;
-  text-shadow: 2px 2px 5px #c00303;
+  font-weight: 600 !important;
+  text-shadow: 2px 2px 5px rgba(192, 3, 3, 0.5);
+}
+
+/* button to top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20%;
+  right: 1%;
+  z-index: 99;
+  border-radius: 50%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -2,80 +2,80 @@ import React, { useState } from "react";
 import Item from "../Item/Item";
 
 export default function ItemListContainer() {
-  
   const [items, setItems] = useState();
   var productos = [
     {
       modelo: "TREN SUPERIOR",
-      descripcion: "Gigabyte",
-      porcentaje: "75",
+      descripcion: "",
+      dias: 75,
       id: 1,
-      pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/_RXYZIXH-removebg-preview.png",
+      pic: "",
+      hyperlink:''
     },
     {
       modelo: "TREN INFERIOR ",
-      descripcion: "Western Digital Green",
-      porcentaje: "30",
+      descripcion: "",
+      dias: 30,
       id: 2,
-      pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/PIRAMIDE_-_copia-removebg-preview.png",
+      pic: "",
+      hyperlink:''
     },
     {
       modelo: "ESPALDA",
-      descripcion: "Amd",
-      porcentaje: "40",
+      descripcion: "",
+      dias: 40,
       id: 3,
-      pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/PIRAMIDE-removebg-preview%20(1).png",
-      
+      pic: "",
     },
     {
       modelo: "FULL BODY",
-      descripcion: "Amd",
-      porcentaje: "40",
-      id: 3,
-      pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/PIRAMIDE-removebg-preview%20(1).png",
-      
+      descripcion: "",
+      dias: 40,
+      id: 4,
+      pic: "",
+      hyperlink:''
     },
     {
       modelo: "RESISTENCIA",
-      descripcion: "Amd",
-      porcentaje: "40",
-      id: 3,
-      pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/PIRAMIDE-removebg-preview%20(1).png",
-      
+      descripcion: "",
+      dias: 40,
+      id: 5,
+      pic: "",
+      hyperlink:''
     },
     {
       modelo: "DEFINICION",
-      descripcion: "Amd",
-      porcentaje: "40",
-      id: 3,
-      pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/PIRAMIDE-removebg-preview%20(1).png",
-      
+      descripcion: "",
+      dias: 40,
+      id: 6,
+      pic: "",
+      hyperlink:''
     },
     {
       modelo: "VELOCIDAD & EXPLOSIVIDAD",
-      descripcion: "Amd",
-      porcentaje: "40",
-      id: 3,
-      pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/PIRAMIDE-removebg-preview%20(1).png",
-      
+      descripcion: "",
+      dias: 40,
+      id: 7,
+      pic: "",
+      hyperlink:''
     },
     {
       modelo: "BAJAR DE PESO",
-      descripcion: "Amd",
-      porcentaje: "40",
-      id: 3,
-      pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/PIRAMIDE-removebg-preview%20(1).png",
-      
+      descripcion: "",
+      dias: 40,
+      id: 8,
+      pic: "",
+      hyperlink:''
     },
     {
       modelo: "COORDINACION",
-      descripcion: "Amd",
-      porcentaje: "40",
-      id: 3,
-      pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/PIRAMIDE-removebg-preview%20(1).png",
-      
+      descripcion: "",
+      dias: 40,
+      id: 9,
+      pic: "",
+      hyperlink:''
     },
-  ]; 
+  ];
 
   const getItem = new Promise((resolve, reject) => {
     setTimeout(() => resolve(items), 2000);
@@ -85,20 +85,16 @@ export default function ItemListContainer() {
   return (
     <>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-          {productos.map((item) => (
-            <Item
-              modelo={item.modelo}
-              precio={item.precio}
-              marca={item.marca}
-              id={item.id}
-              pic={item.pic}
-              stock={item.stock}
-              herramienta1={item.herramienta1}
-              herramienta2={item.herramienta2}
-              herramienta3={item.herramienta3}
-              porcentaje={item.porcentaje}
-            />
-          ))}
+        {productos.map((item) => (
+          <Item
+            modelo={item.modelo}
+            precio={item.precio}
+            marca={item.marca}
+            id={item.id}
+            pic={item.pic}
+            porcentaje={item.porcentaje}
+          />
+        ))}
       </div>
     </>
   );

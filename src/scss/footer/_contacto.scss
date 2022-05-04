@@ -18,7 +18,13 @@
             }
         }
         .meta {
-            transition: filter 0.75s ease-in-out;
+            width: 100px !important;
+            height: 100px !important;
+            overflow: hidden;
+            .phone {
+                transition: filter 0.75s ease-in-out;
+                transform: scale(20%) rotatez(90deg) translate(-120%, 100%);
+            }
         }
     }
     .contactoContainer {
@@ -59,7 +65,7 @@
                 font-weight: 600;
                 color: #fefefe;
                 text-shadow: 2px 2px 5px rgb(0, 0, 0);
-                a{
+                a {
                     text-decoration: none;
                     color: #fefefe;
                     text-shadow: 2px 2px 5px black;

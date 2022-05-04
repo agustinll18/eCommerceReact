@@ -5,11 +5,18 @@ const Goal = () => {
   return (
     <div className="goal col-9">
       <motion.div className="carrera" ref={constraintsRef}>
-        <motion.div className="men" drag="x" dragConstraints={constraintsRef}>{/* 
+        <motion.div className="men" drag="x" dragConstraints={constraintsRef}>
+          {/* 
           <img src="https://img.icons8.com/ios-filled/100/000000/exercise.png" alt="menRunning"/> */}
         </motion.div>
       </motion.div>
-      <img className="meta" src={require('../../icons8-phone-ringing.gif')} style={{transform: 'scale(50%) rotatez(90deg)'}}/>
+      <div className="meta">
+        <img
+          className="phone"
+          src={require("../../icons8-phone-ringing.gif")}
+          alt="phone"
+        />
+      </div>
     </div>
   );
 };

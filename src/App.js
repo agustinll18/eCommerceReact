@@ -10,16 +10,20 @@ import Waves from "./components/footer/Waves"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
+  
   return (
     <>
       <div className="App">
         <Header />
-        <div className="navigation" id="">
+        <div className="navigation" >
           <ControlledCarousel />
           <div class="cards col-lg-6 col-sm-12" id="quienesSomos">
             <QuienesSomos />
           </div>
-          <div class="cards col-9" id="Cursos">
+          <br id="Cursos"/>
+          <br/>
+          <br/>
+          <div class="cards col-9" id="">
             <Servicios />
           </div>
         </div>
